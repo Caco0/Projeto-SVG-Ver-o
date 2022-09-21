@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	background-color: #ffead4;
+	overflow-x: hidden;
+}
+.container__header {
+	width: 100vw;
+}
+h1,
+h2 {
+	font-family: "Pacifico", cursive;
+	color: #be253f;
+	text-align: center;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 1.5em;
+}
+p {
+	font-family: "Lato", sans-serif;
+	color: #484848;
+	font-size: 1em;
+}
+.lett-header {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	width: 70%;
+	margin-top: 7%;
+	fill: transparent;
+	animation: lett-preenchimento 0.5s ease-in-out forwards 2.5s;
+}
+.lett-header path {
+	animation: lett-tracado 3s ease-in-out forwards 1s;
+	stroke-dasharray: 3000;
+	stroke-dashoffset: 3000;
+	stroke: #be253f;
+	stroke-width: 2px;
+}
+
+.container__cards {
+	display: flex;
+	margin: auto;
+	width: 80%;
+	justify-content: space-around;
+}
+.cad__dir,
+.cad__esq {
+}
+.card {
+	background-color: aliceblue;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 20px;
+	width: 50%;
+}
+.lett__footer {
+	display: block;
+	fill: #fff;
+	width: 60%;
+	opacity: 0.5;
+	position: absolute;
+	left: 20%;
+	top: 40%;
+	margin-bottom: 0;
+}
+.container__footer {
+	position: relative;
+}
+
+.footer__infos {
+	background-color: #00a9b2;
+	text-align: center;
+	color: #000;
+	margin: 0;
+}
+.creditos {
+	text-decoration: none;
+	color: #000;
+	margin-top: 0;
+}
+.footer__texto {
+	background-color: #00a9b2;
+	font-size: large;
+	padding: 20px 0;
+	margin: 0;
+}
+
+@keyframes lett-preenchimento {
+	to {
+		fill: #be253f;
+	}
+}
+@keyframes lett-tracado {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
